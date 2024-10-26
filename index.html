@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <h1>Mod</h1>
+        <h1 class="header-title">Mod</h1>
         <nav>
-            <ul>
-                <li><a href="#biography-section">Biography</a></li>
-                <li><a href="#designers-section">Designers</a></li>
-                <li><a href="#testimonials-section">Testimonials</a></li>
-                <li><a href="#strong-points-section">Strong points</a></li>
+            <ul class="navigation-menu">
+                <li class="navigation-menu-element"><a href="#biography-section">Biography</a></li>
+                <li class="navigation-menu-element"><a href="#designers-section">Designers</a></li>
+                <li class="navigation-menu-element"><a href="#testimonials-section">Testimonials</a></li>
+                <li class="navigation-menu-element"><a href="#strong-points-section">Strong points</a></li>
             </ul>
         </nav>
     </header>
@@ -25,10 +30,10 @@
         <!-- Hero section  -->
         <section>
             <div class="title-box">
-                <h2>
+                <h2 class="hero-title">
                     Mod studio
                 </h2>
-                <p>
+                <p class="hero-subtitle">
                     Modern web studio
                 </p>
             </div>
@@ -37,78 +42,91 @@
         </section>
         <!-- Biography section -->
         <section id="biography-section">
-            <h2>Biography</h2>
+            <h2 class="section-title">Biography</h2>
             <img src="./images/jared-weiss-P3cB0ynqYBw-unsplash 1.jpg" alt="Katya Mills">
             <div>
-                <p>Katya Mills</p>
-                <p>Art Director Scenography / Styling / Creative Photography / Design</p>
+                <p class="biography-name">Katya Mills</p>
+                <p class="biography-profession">Art Director Scenography / Styling / Creative Photography / Design</p>
                 <hr>
-                <blockquote>“The more I deal with the work as something that is my own, as something that is personal,
+                <blockquote class="biography-quote">“The more I deal with the work as something that is my own, as
+                    something that is personal,
                     the more
                     successful it is.”</blockquote>
             </div>
         </section>
         <!-- Designers section -->
         <section id="designers-section">
-            <h2>Designers</h2>
+            <h2 class="section-title">Designers</h2>
             <ul class="designers-list">
                 <li class="designer-info">
                     <img src="./images/spurwing-agency-r6LceZ3ckpM-unsplash 1.jpg" alt="Jess Wonder">
-                    <p>Jess Wonder <br> From/ Be more flower <br> Skills/ Design Strategy / Marketing</p>
+                    <p>Jess Wonder <br> From/ <span class="designer-info-from">Be more flower</span> <br> Skills/ <span
+                            class="designer-info-skills">Design Strategy /
+                            Marketing</span></p>
                 </li>
                 <li class="designer-info">
                     <img src="./images/stil-P1jQzyvqfns-unsplash 1.jpg" alt="Kameron Clein">
-                    <p>Kameron Clein <br> From/ Be more flower <br> Skills/ Design Strategy / Marketing</p>
+                    <p>Kameron Clein <br> From/ <span class="designer-info-from">Be more flower</span> <br> Skills/
+                        <span class="designer-info-skills">Design Strategy /
+                            Marketing</span>
+                    </p>
                 </li>
                 <li class="designer-info">
                     <img src="./images/stil-_mvSe9q8_n4-unsplash 1.jpg" alt="Louisse Red">
-                    <p>Louisse Red <br> From/ Be more flower <br> Skills/ Design Strategy / Marketing</p>
+                    <p>Louisse Red <br> From/ <span class="designer-info-from">Be more flower</span> <br> Skills/ <span
+                            class="designer-info-skills">Design Strategy /
+                            Marketing</span></p>
                 </li>
                 <li class="designer-info">
                     <img src="./images/stil-P1jQzyvqfns-unsplash 1.jpg" alt="Kameron Clein">
-                    <p>Kameron Clein <br> From/ Be more flower <br> Skills/ Design Strategy / Marketing</p>
+                    <p>Kameron Clein <br> From/ <span class="designer-info-from">Be more flower</span> <br> Skills/
+                        <span class="designer-info-skills">Design Strategy /
+                            Marketing</span>
+                    </p>
                 </li>
             </ul>
         </section>
         <!-- Testimonials section -->
         <section id="testimonials-section">
-            <h2>Testimonials</h2>
+            <h2 class="section-title">Testimonials</h2>
             <div class="cases">
                 <ul class="cases-list">
-                    <li class="case">
+                    <li class="case-list-item">
                         Website <a href="#">www.whitepapers.com</a>
                     </li>
-                    <li class="case">
+                    <li class="case-list-item">
                         Creativity <a href="#">www.whitepapers.com</a>
                     </li>
-                    <li class="case">
+                    <li class="case-list-item">
                         Creativity <a href="#">www.whitepapers.com</a>
                     </li>
                 </ul>
                 <img src="./images/keghan-crossland-ZZxmc66SjfM-unsplash 1.jpg" alt="Example of studio work">
             </div>
             <div class="testimonial">
-                <blockquote>I just really want to do good work and work with some great people, people who challenge me.
+                <blockquote class="testimonial-quote">I just really want to do good work and work with some great
+                    people, people who challenge me.
                 </blockquote>
                 <img src="./images/sinitta-leunen-YaReHIzNdRw-unsplash 1.jpg" alt="Testimonial">
             </div>
         </section>
         <!-- Strong points section -->
         <section id="strong-points-section">
-            <h2>Strengths</h2>
+            <h2 class="section-title">Strong points</h2>
             <img src="./images/dawid-liberadzki-vPFbVB7DPZI-unsplash 1.jpg" alt="Our work">
             <img src="./images/avery-klein-JaXs8Tk5Iww-unsplash 1.jpg" alt="Our work">
+            <p class="strong-points-list-title">Strength</p>
             <ul class="strong-points-list">
-                <li>Interiors</li>
-                <li>Outdoors</li>
-                <li>Portraits</li>
-                <li>Styling</li>
-                <li>Events</li>
-                <li>Architecture</li>
-                <li>Design</li>
-                <li>Celebrations</li>
-                <li>Fashion</li>
-                <li>Nature</li>
+                <li class="strong-points-list-item">Interiors</li>
+                <li class="strong-points-list-item">Outdoors</li>
+                <li class="strong-points-list-item">Portraits</li>
+                <li class="strong-points-list-item">Styling</li>
+                <li class="strong-points-list-item">Events</li>
+                <li class="strong-points-list-item">Architecture</li>
+                <li class="strong-points-list-item">Design</li>
+                <li class="strong-points-list-item">Celebrations</li>
+                <li class="strong-points-list-item">Fashion</li>
+                <li class="strong-points-list-item">Nature</li>
             </ul>
             <img src="./images/keghan-crossland-ZZxmc66SjfM-unsplash 1.jpg" alt="Our work">
         </section>
@@ -119,8 +137,8 @@
             <a href="#">+7 921 123-45-67</a>
             <a href="#">info@modstudio.com</a>
         </address>
-        <p>A product of MOD</p>
-        <p>© 2023 Mod Media. All rights reserved</p>
+        <p class="creator-info">A product of <span class="footer-company-name">MOD</span></p>
+        <p class="copyright">© 2023 Mod Media. All rights reserved</p>
     </footer>
 </body>
 
