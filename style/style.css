@@ -25,6 +25,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 18.75px;
+    text-align: left;
 }
 
 .header-title {
@@ -66,41 +67,35 @@ body {
     font-size: 86px;
     font-weight: 500;
     line-height: 114.64px;
-    text-align: left;
 }
 
 .biography-profession {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
-    text-align: left;
 }
 
 .biography-quote {
     font-family: "Bitter";
     font-size: 26px;
     line-height: 31.2px;
-    text-align: left;
 }
 
 .designer-info>p {
     font-weight: 700;
-    text-align: left;
 }
 
 .designer-info-from,
 .designer-info-skills {
     font-weight: 400;
-    text-align: left;
 }
 
 .case-list-item {
     font-weight: 700;
-    text-align: left;
 }
 
 .case-list-item>a {
-    text-align: left;
+    font-weight: 400;
 }
 
 .testimonial-quote {
@@ -115,19 +110,16 @@ body {
     font-size: 86px;
     font-weight: 500;
     line-height: 86px;
-    text-align: left;
 }
 
 .strong-points-list-item {
     font-family: "Bitter";
     font-size: 34px;
     line-height: 40.8px;
-    text-align: left;
 }
 
 .contact-info {
     line-height: 26px;
-    text-align: left;
     font-style: normal;
 }
 
