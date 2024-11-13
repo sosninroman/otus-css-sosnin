@@ -81,7 +81,7 @@ body {
     line-height: 31.2px;
 }
 
-.designer-info>p {
+.designer-info-text {
     font-weight: 700;
 }
 
@@ -94,7 +94,7 @@ body {
     font-weight: 700;
 }
 
-.case-list-item>a {
+.case-link {
     font-weight: 400;
 }
 
