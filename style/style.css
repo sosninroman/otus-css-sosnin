@@ -212,6 +212,8 @@ p {
 
 .case-link {
     font-weight: 400;
+    text-decoration: none;
+    color: black;
 }
 
 .cases-image {
