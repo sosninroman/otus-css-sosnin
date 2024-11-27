@@ -106,11 +106,42 @@ p {
     line-height: 28.13px;
 }
 
+#biography-section {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 1165px;
+    margin: 152px auto;
+}
+
+.biography-title {
+    order: 1;
+    transform: rotateZ(270deg) translateX(-38%) translateY(-90%);
+    height: fit-content;
+}
+
+.biography-image {
+    order: 0;
+}
+
+.biography-card {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 455px;
+    gap: 36px;
+    max-width: 455px;
+    margin: auto 0;;
+    max-height: 850px;
+}
+
 .biography-name {
     font-family: "Playfair Display";
     font-size: 86px;
     font-weight: 500;
     line-height: 114.64px;
+    word-spacing: 2rem;
 }
 
 .biography-profession {
@@ -119,10 +150,19 @@ p {
     line-height: 21.09px;
 }
 
+.biography-quote-block > hr {
+    width: 15px;
+    margin: 0;
+    border: 3px solid black;
+    margin-bottom: 18px;
+}
+
 .biography-quote {
     font-family: "Bitter";
     font-size: 26px;
     line-height: 31.2px;
+    margin: 0;
+    max-width: 370px;
 }
 
 .designer-info-text {
