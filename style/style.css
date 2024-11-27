@@ -182,7 +182,7 @@ section {
     overflow: auto;
     padding-left: 20px;
     list-style-type: none;
-    width: 100%;
+    width: 100%-1px;
 }
 
 .designer-info {
@@ -273,6 +273,27 @@ section {
 
 /* Strong points section */
 
+.strong-points-section-title {
+    margin-left: 258px;
+    margin-bottom: 30px;
+}
+
+.strong-points-wrp {
+    display: grid;
+    grid-template-columns: repeat(2, 335px) 451px 335px;
+    grid-template-rows: 554px;
+    gap: 20px;
+    overflow-x: auto;
+    padding-left: 20px;
+}
+
+.strong-points-list-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 28px;
+}
+
 .strong-points-list-title {
     font-family: "Playfair Display";
     font-size: 86px;
@@ -280,12 +301,27 @@ section {
     line-height: 86px;
 }
 
+.strong-points-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 216px;
+}
+
 .strong-points-list-item {
     font-family: "Bitter";
     font-size: 34px;
     line-height: 40.8px;
+    height: 1.241em;
 }
 
+.strong-points-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
 .contact-info {
     line-height: 26px;
     font-style: normal;
