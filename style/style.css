@@ -34,6 +34,10 @@ p {
     margin: 0;
 }
 
+section {
+    margin-bottom: 150px;
+}
+
 .header {
     padding: 16px 20px 16px 23px;
     display: flex;
@@ -106,12 +110,13 @@ p {
     line-height: 28.13px;
 }
 
+/* Biography section*/
 #biography-section {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     max-width: 1165px;
-    margin: 152px auto;
+    margin: 152px auto 150px auto;
 }
 
 .biography-title {
@@ -132,7 +137,7 @@ p {
     max-width: 455px;
     gap: 36px;
     max-width: 455px;
-    margin: auto 0;;
+    margin: auto 0;
     max-height: 850px;
 }
 
@@ -163,6 +168,36 @@ p {
     line-height: 31.2px;
     margin: 0;
     max-width: 370px;
+}
+
+/* Designrs section*/
+.designers-title {
+    margin-left: 139px;
+    margin-bottom: 30px;
+}
+
+.designers-list {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+    padding-left: 20px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.designer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.designer-info.active > .designer-info-text {
+    margin-left: 239px;
+}
+
+.designer-info:not(.active) {
+    padding-top: 99px;
 }
 
 .designer-info-text {
