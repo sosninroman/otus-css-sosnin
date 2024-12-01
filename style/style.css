@@ -43,6 +43,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .header-title {
@@ -117,6 +118,7 @@ section {
     justify-content: space-between;
     max-width: 1165px;
     margin: 152px auto 150px auto;
+    overflow: auto;
 }
 
 .biography-title {
@@ -170,7 +172,12 @@ section {
     max-width: 370px;
 }
 
-/* Designrs section*/
+/* Designers section*/
+#designers-section {
+    max-width: 1677px;
+    margin: 0 auto;
+}
+
 .designers-title {
     margin-left: 139px;
     margin-bottom: 30px;
@@ -180,9 +187,7 @@ section {
     display: flex;
     gap: 20px;
     overflow: auto;
-    padding-left: 20px;
-    list-style-type: none;
-    width: 100%-1px;
+    padding: 0 20px;
 }
 
 .designer-info {
@@ -217,6 +222,7 @@ section {
     height: 760px;
     max-width: 1400px;
     margin: 150px auto;
+    overflow: auto;
 }
 
 .testimonials-title {
@@ -272,6 +278,10 @@ section {
 }
 
 /* Strong points section */
+#strong-points-section {
+    max-width: 1928px;
+    margin: 0 auto;
+}
 
 .strong-points-section-title {
     margin-left: 258px;
@@ -280,11 +290,12 @@ section {
 
 .strong-points-wrp {
     display: grid;
-    grid-template-columns: repeat(2, 335px) 451px 335px;
+    grid-template-columns: repeat(2, 335px) 451px repeat(2, 335px);
     grid-template-rows: 554px;
     gap: 20px;
     overflow-x: auto;
-    padding-left: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .strong-points-list-wrp {
