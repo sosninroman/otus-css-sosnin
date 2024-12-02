@@ -119,10 +119,11 @@ section {
     .hero-section {
         padding: 0;
         background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
+        height: 753px;
     }
 
     .hero-title-box {
-        padding: 98.5px 32px;
+        padding: 97.5px 32px 107.5px 32px;
     }
 
     .hero-title {
@@ -138,7 +139,7 @@ section {
         font-weight: 500;
         line-height: 21.09px;
         text-align: center;
-        margin-top: 0;
+        margin-top: 13.5px;
     }
 }
 
