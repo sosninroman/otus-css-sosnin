@@ -38,6 +38,12 @@ section {
     margin-bottom: 150px;
 }
 
+@media screen and (max-width: 450px) {
+    section {
+        margin-bottom: 80px;
+    }
+}
+
 /* Header */
 .header {
     padding: 16px 20px 16px 23px;
@@ -74,6 +80,12 @@ section {
 
 .navigation-link:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        display: none;
+    }
 }
 
 /* Hero section */
@@ -119,11 +131,11 @@ section {
     .hero-section {
         padding: 0;
         background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
-        height: 753px;
+        height: 763px;
     }
 
     .hero-title-box {
-        padding: 97.5px 32px 107.5px 32px;
+        padding: 107.5px 32px;
     }
 
     .hero-title {
@@ -165,14 +177,16 @@ section {
 
 .biography-card {
     order: 2;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     max-width: 455px;
-    gap: 36px;
+    /* gap: 36px; */
     max-width: 455px;
-    margin: auto 0;
+    /* margin: auto 0; */
     max-height: 850px;
+    padding-top: 174px;
+    padding-bottom: 174px;
 }
 
 .biography-name {
@@ -181,7 +195,14 @@ section {
     font-weight: 500;
     line-height: 114.64px;
     word-spacing: 2rem;
+    margin-bottom: 36px;
 }
+
+.biography-profession-wrp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+ }
 
 .biography-profession {
     font-size: 18px;
@@ -189,7 +210,24 @@ section {
     line-height: 21.09px;
 }
 
-.biography-quote-block > hr {
+.biography-roles-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.biography-role {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+}
+
+.biography-role:not(:first-child)::before {
+    content: " / ";
+}
+
+.biography-card-separator {
     width: 15px;
     margin: 0;
     border: 3px solid black;
@@ -202,6 +240,93 @@ section {
     line-height: 31.2px;
     margin: 0;
     max-width: 370px;
+}
+
+@media screen and (max-width: 450px) {
+    #biography-section {
+        flex-direction: column;
+        margin: 80px auto;
+        position: relative;
+    }
+
+    .biography-title {
+        transform: initial;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        order: 1;
+        position: absolute;
+        right: 6%;
+        top: 2px;
+    }
+
+    .biography-image {
+        order: 3;
+    }
+
+    .biography-card {
+        order: 2;
+        padding-left: 18px;
+        padding-right: 9px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biography-role:not(:first-child)::before {
+        content: " - ";
+    }
+    .biography-role:first-child::before {
+        content: " - ";
+    }
+
+    .biography-profession-wrp {
+        order: 1;
+        margin-bottom: 60px;
+    }
+
+    .biography-quote {
+        order: 2;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin-bottom: 86px;
+        max-width: 417px;
+    }
+
+    .biography-card-separator {
+        display: none;
+    }
+
+    .biography-name {
+        order:4;
+        font-family: Playfair Display;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 85.31px;
+        text-align: left;
+        word-spacing: normal;
+    }
+
+    .biography-name::before {
+        content: "-";
+    }
+
+    .biography-role {
+        display: block;
+    }
+
+    .biography-image {
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
 /* Designers section*/
