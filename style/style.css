@@ -236,6 +236,10 @@ section {
     max-width: 370px;
 }
 
+.quote-break {
+    display: none;
+}
+
 @media screen and (max-width: 450px) {
     #biography-section {
         flex-direction: column;
@@ -291,7 +295,7 @@ section {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
-        margin-bottom: 86px;
+        margin-bottom: 50px;
         max-width: 417px;
     }
 
@@ -320,6 +324,10 @@ section {
     .biography-image {
         height: 400px;
         object-fit: cover;
+    }
+
+    .quote-break {
+        display: initial;
     }
 }
 
