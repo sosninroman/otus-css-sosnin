@@ -648,7 +648,6 @@ footer {
     padding: 60px 20px 70px 20px;
     margin-top: 150px;
     gap: 20px;
-    
 }
 
 .contact-info {
@@ -686,4 +685,28 @@ footer {
     margin-right: 4px;
     margin-bottom: 1px;
     align-self: center;
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        margin-top: 242px;
+        padding: 43px 16px 70px 16px;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .contact-info {
+        order: 2;
+        width: initial;
+    }
+    .creator-info {
+        order: 1;
+        width: initial;
+        align-self: flex-end;
+    }
+    .copyright {
+        order: 3;
+        width: initial;
+        align-self: flex-start;
+        margin-top: 2px;
+    }
 }
