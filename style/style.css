@@ -639,9 +639,28 @@ section {
 }
 
 /* Footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 20px 70px 20px;
+    margin-top: 150px;
+    gap: 20px;
+    
+}
+
 .contact-info {
     line-height: 26px;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 40px)
+}
+
+.contact-info > a {
+    color: white;
 }
 
 .creator-info {
@@ -649,6 +668,8 @@ section {
     font-weight: 500;
     line-height: 21.09px;
     text-align: center;
+    width: calc(100% / 3 - 40px);
+    align-self: center;
 }
 
 .footer-company-name {
@@ -656,8 +677,13 @@ section {
     font-weight: 900;
     line-height: 28.13px;
     text-align: center;
+    margin-left: 5px;
 }
 
 .copyright {
     text-align: right;
+    width: calc(100% / 3 - 40px);
+    margin-right: 4px;
+    margin-bottom: 1px;
+    align-self: center;
 }
