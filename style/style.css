@@ -84,6 +84,7 @@ section {
 
 @media screen and (max-width: 450px) {
     .header {
+        display: block;
         position: fixed;
         bottom: 311px;
         padding: 0px;
@@ -92,6 +93,7 @@ section {
         border-bottom: 1px solid black;
         z-index: 1;
         height: 81px;
+        width: 100%
     }
 
     .header-title {
@@ -100,12 +102,14 @@ section {
 
     .navigation-menu {
         gap: 16px;
-        padding-left: 50px;
+        padding: 0 18px;
+        justify-content: space-around;
+        text-align: center;
     }
 
     .navigation-menu-element {
         font-size: 0;
-        width: 92px;
+        flex: 1;
     }
 
     .navigation-menu-element::first-letter {
