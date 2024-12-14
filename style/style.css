@@ -38,6 +38,13 @@ section {
     margin-bottom: 150px;
 }
 
+@media screen and (max-width: 450px) {
+    section {
+        margin-bottom: 80px;
+    }
+}
+
+/* Header */
 .header {
     padding: 16px 20px 16px 23px;
     display: flex;
@@ -54,39 +61,27 @@ section {
     margin: 0;
 }
 
-.navigation-menu {
-    display: flex;
-    gap: 55px;
-    list-style-type: none;
+@media screen and (max-width: 450px) {
+    .header {
+        display: none;
+    }
 }
 
-.navigation-menu-element {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.13px;
-}
-
-.navigation-link {
-    color: black;
-    text-decoration: none;
-}
-
-.navigation-link:hover {
-    text-decoration: underline;
-}
-
+/* Hero section */
 .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 1.jpg");
     background-size: 100% 100%;
     height: 630px;
+    padding-top: 136px;
+    box-sizing: border-box;
 }
 
 .hero-title-box {
     background-color: white;
     padding: 110px 65px;
+    max-width: 690px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .hero-title {
@@ -111,13 +106,41 @@ section {
     line-height: 28.13px;
 }
 
+@media screen and (max-width: 450px) {
+    .hero-section {
+        padding: 0;
+        background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
+        height: 763px;
+    }
+
+    .hero-title-box {
+        padding: 107.5px 32px;
+    }
+
+    .hero-title {
+        font-family: "Playfair Display";
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 93.2px;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.09px;
+        text-align: center;
+        margin-top: 13.5px;
+    }
+}
+
 /* Biography section*/
 #biography-section {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     max-width: 1165px;
-    margin: 152px auto 150px auto;
+    margin: 152px auto 148px auto;
     overflow: auto;
 }
 
@@ -133,14 +156,10 @@ section {
 
 .biography-card {
     order: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 455px;
-    gap: 36px;
-    max-width: 455px;
-    margin: auto 0;
     max-height: 850px;
+    padding-top: 174px;
+    padding-bottom: 174px;
 }
 
 .biography-name {
@@ -149,7 +168,14 @@ section {
     font-weight: 500;
     line-height: 114.64px;
     word-spacing: 2rem;
+    margin-bottom: 36px;
 }
+
+.biography-profession-wrp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+ }
 
 .biography-profession {
     font-size: 18px;
@@ -157,7 +183,24 @@ section {
     line-height: 21.09px;
 }
 
-.biography-quote-block > hr {
+.biography-roles-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.biography-role {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+}
+
+.biography-role:not(:first-child)::before {
+    content: " / ";
+}
+
+.biography-card-separator {
     width: 15px;
     margin: 0;
     border: 3px solid black;
@@ -170,6 +213,101 @@ section {
     line-height: 31.2px;
     margin: 0;
     max-width: 370px;
+}
+
+.quote-break {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    #biography-section {
+        flex-direction: column;
+        margin: 80px auto;
+        position: relative;
+    }
+
+    .biography-title {
+        transform: initial;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        order: 1;
+        position: absolute;
+        right: 6%;
+        top: 2px;
+    }
+
+    .biography-image {
+        order: 3;
+    }
+
+    .biography-card {
+        order: 2;
+        padding-left: 18px;
+        padding-right: 9px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biography-role:not(:first-child)::before {
+        content: " - ";
+    }
+    .biography-role:first-child::before {
+        content: " - ";
+    }
+
+    .biography-profession-wrp {
+        order: 1;
+        margin-bottom: 60px;
+    }
+
+    .biography-quote {
+        order: 2;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin-bottom: 50px;
+        max-width: 417px;
+    }
+
+    .biography-card-separator {
+        display: none;
+    }
+
+    .biography-name {
+        order:4;
+        font-family: Playfair Display;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 85.31px;
+        text-align: left;
+        word-spacing: normal;
+    }
+
+    .biography-name::before {
+        content: "-";
+    }
+
+    .biography-role {
+        display: block;
+    }
+
+    .biography-image {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .quote-break {
+        display: initial;
+    }
 }
 
 /* Designers section*/
@@ -201,6 +339,10 @@ section {
     margin-left: 239px;
 }
 
+.designer-info.active > picture {
+    max-height: 538px;
+}
+
 .designer-info:not(.active) {
     padding-top: 99px;
 }
@@ -212,6 +354,35 @@ section {
 .designer-info-from,
 .designer-info-skills {
     font-weight: 400;
+}
+
+@media screen and (max-width: 450px) {
+    .designers-title {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        margin-left: 16px;
+        margin-bottom: 32px;
+    }
+
+    .designers-list {
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    .designer-info.active img {
+        max-width: 310px;
+        height: 437.8px;
+    }
+
+    .designer-info.active>.designer-info-text {
+        margin-left: 0;
+    }
+
+    .designer-info:not(.active) {
+        padding-top: 0;
+    }
 }
 
 /* Testimonials section  */
@@ -235,10 +406,10 @@ section {
 .cases-list {
     order: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-start;
     gap: 98px;
-    transform: rotateZ(270deg) translateY(47%) translateX(-220%);
+    transform: rotateZ(270deg) translateY(47%) translateX(208%);
     grid-column-start: 2;
     grid-column-end: 3;
     width: 130px;
@@ -275,6 +446,72 @@ section {
     text-align: center;
     margin: 0;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 450px) {
+    #testimonials-section {
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto 76px auto;
+        padding-left: 18px;
+        padding-right: 18px;
+        height: initial;
+    }
+
+    .testimonials-title {
+        transform: initial;
+        order: 1;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        align-self: flex-end;
+        margin-right: 2px;
+    }
+
+    .cases-list {
+        transform: initial;
+        flex-wrap: wrap;
+        order: 3;
+        row-gap: 26px;
+        column-gap: 47px;
+        flex-direction: row;
+        padding-top: 6px;
+        padding-left: 3px;
+        width: initial;
+        margin-top: 2px;
+    }
+
+    .case-list-item {
+        max-width: 170px;
+    }
+
+    .cases-image {
+        display: none;
+    }
+
+    .testimonial {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .testimonial-quote {
+        margin: 5px auto 22px auto;
+        max-width: 342px;
+        font-family: Bitter;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+    }
+
+    .testimonial-img {
+        width: 100%;
+        height: 330px;
+        align-self: center;
+        object-fit: cover;
+    }
 }
 
 /* Strong points section */
@@ -327,15 +564,140 @@ section {
 }
 
 .strong-points-img {
-    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
+@media screen and (max-width: 450px) {
+    .strong-points-section-title {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        margin-left: 16px;
+    }
+
+    .strong-points-wrp {
+        grid-template-columns: 201px repeat(4, 310px);
+        grid-template-rows: 450px;
+        padding: 0 16px;
+        gap: 18px;
+    }
+
+    .strong-points-list-wrp {
+        grid-row: 1;
+        gap: 24px;
+    }
+
+    .strong-points-list-title {
+        font-family: Playfair Display;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 46px;
+    }
+
+    .strong-points-list {
+        width: 201px;
+    }
+
+    .strong-points-list-item {
+        font-family: "Bitter";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        margin-bottom: 7.2px;
+        padding-left: 15px;
+    }
+}
+
+/* Navigation */
+.navigation {
+    margin-top: 0px;
+    position: absolute;
+    top: 37px;
+    right: 22px;
+}
+
+.navigation-menu {
+    display: flex;
+    gap: 55px;
+    list-style-type: none;
+}
+
+.navigation-menu-element {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+}
+
+.navigation-link {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+    .navigation {
+        margin-top: 80px;
+        position: sticky;
+        bottom: 0px;
+        background-color: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .navigation-menu {
+        margin-top: 17px;
+        margin-bottom: 13px;
+        gap: 16px;
+        padding: 0 17px;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .navigation-menu-element {
+        font-size: 0;
+        flex: 1;
+    }
+
+    .navigation-menu-element::first-letter {
+        font-family: Bitter;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: center;
+    }
+}
+
 /* Footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 20px 70px 20px;
+    margin-top: 150px;
+    gap: 20px;
+}
+
 .contact-info {
     line-height: 26px;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 40px)
+}
+
+.contact-info > a {
+    color: white;
 }
 
 .creator-info {
@@ -343,6 +705,8 @@ section {
     font-weight: 500;
     line-height: 21.09px;
     text-align: center;
+    width: calc(100% / 3 - 40px);
+    align-self: center;
 }
 
 .footer-company-name {
@@ -350,8 +714,37 @@ section {
     font-weight: 900;
     line-height: 28.13px;
     text-align: center;
+    margin-left: 5px;
 }
 
 .copyright {
     text-align: right;
+    width: calc(100% / 3 - 40px);
+    margin-right: 4px;
+    margin-bottom: 1px;
+    align-self: center;
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        margin-top: 80px;
+        padding: 43px 16px 70px 16px;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .contact-info {
+        order: 2;
+        width: initial;
+    }
+    .creator-info {
+        order: 1;
+        width: initial;
+        align-self: flex-end;
+    }
+    .copyright {
+        order: 3;
+        width: initial;
+        align-self: flex-start;
+        margin-top: 2px;
+    }
 }
