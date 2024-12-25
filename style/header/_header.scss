@@ -1,0 +1,15 @@
+.header {
+    padding: 16px 20px 16px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+@import "./header__title";
+
+@media screen and (max-width: 450px) {
+    .header {
+        display: none;
+    }
+}

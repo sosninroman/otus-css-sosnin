@@ -1,0 +1,9 @@
+.biography-section__quote-break {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .biography-section__quote-break {
+        display: initial;
+    }
+}

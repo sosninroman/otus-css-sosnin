@@ -1,0 +1,17 @@
+.hero-section__title {
+    font-family: "Playfair Display";
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 103.2px;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .hero-section__title {
+        font-family: "Playfair Display";
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 93.2px;
+        text-align: center;
+    }
+}

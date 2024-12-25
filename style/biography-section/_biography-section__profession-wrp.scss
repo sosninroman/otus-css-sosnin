@@ -1,0 +1,12 @@
+.biography-section__profession-wrp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+}
+
+@media screen and (max-width: 450px) {
+    .biography-section__profession-wrp {
+        order: 1;
+        margin-bottom: 60px;
+    }
+}

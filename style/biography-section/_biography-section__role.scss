@@ -1,0 +1,24 @@
+.biography-section__role {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+}
+
+.biography-section__role:not(:first-child)::before {
+    content: " / ";
+}
+
+@media screen and (max-width: 450px) {
+    .biography-section__role {
+        display: block;
+    }
+
+    .biography-section__role:not(:first-child)::before {
+        content: " - ";
+    }
+
+    .biography-section__role:first-child::before {
+        content: " - ";
+    }
+}

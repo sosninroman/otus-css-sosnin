@@ -1,0 +1,18 @@
+.biography-section__title {
+    order: 1;
+    transform: rotateZ(270deg) translateX(-38%) translateY(-90%);
+    height: fit-content;
+}
+
+@media screen and (max-width: 450px) {
+    .biography-section__title {
+        transform: initial;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        order: 1;
+        position: absolute;
+        right: 6%;
+        top: 2px;
+    }
+}
