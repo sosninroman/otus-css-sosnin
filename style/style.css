@@ -296,7 +296,7 @@ section {
   overflow: auto;
   padding: 0 20px;
 }
-.designers-section__designer-card {
+.designers-section__designer-card, .designers-section__designer-card_active {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -332,7 +332,7 @@ section {
     padding: 0 16px;
     gap: 16px;
   }
-  .designers-section__designer-card {
+  .designers-section__designer-card, .designers-section__designer-card_active {
     padding-top: 0;
   }
   .designers-section__designer-card_active {
