@@ -140,15 +140,77 @@ section {
   margin: 152px auto 148px auto;
   overflow: auto;
 }
-
+.biography-section__image {
+  order: 0;
+}
 .biography-section__title {
   order: 1;
   transform: rotateZ(270deg) translateX(-38%) translateY(-90%);
   height: -moz-fit-content;
   height: fit-content;
 }
+.biography-section__card {
+  order: 2;
+  max-width: 455px;
+  max-height: 850px;
+  padding-top: 174px;
+  padding-bottom: 174px;
+}
+.biography-section__name {
+  font-family: "Playfair Display";
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 114.64px;
+  word-spacing: 2rem;
+  margin-bottom: 36px;
+}
+.biography-section__profession-wrp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+.biography-section__profession {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+.biography-section__roles-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.biography-section__role {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+.biography-section__role:not(:first-child)::before {
+  content: " / ";
+}
+.biography-section__card-separator {
+  width: 15px;
+  margin: 0;
+  border: 3px solid black;
+  margin-bottom: 18px;
+}
+.biography-section__quote {
+  font-family: "Bitter";
+  font-size: 26px;
+  line-height: 31.2px;
+  margin: 0;
+  max-width: 370px;
+}
+.biography-section__quote-break {
+  display: none;
+}
 
 @media screen and (max-width: 450px) {
+  .biography-section {
+    flex-direction: column;
+    margin: 80px auto;
+    position: relative;
+  }
   .biography-section__title {
     transform: initial;
     font-size: 18px;
@@ -159,28 +221,12 @@ section {
     right: 6%;
     top: 2px;
   }
-}
-.biography-section__image {
-  order: 0;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__image {
     order: 3;
     height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-}
-.biography-section__card {
-  order: 2;
-  max-width: 455px;
-  max-height: 850px;
-  padding-top: 174px;
-  padding-bottom: 174px;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__card {
     order: 2;
     padding-left: 18px;
@@ -190,17 +236,6 @@ section {
     display: flex;
     flex-direction: column;
   }
-}
-.biography-section__name {
-  font-family: "Playfair Display";
-  font-size: 86px;
-  font-weight: 500;
-  line-height: 114.64px;
-  word-spacing: 2rem;
-  margin-bottom: 36px;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__name {
     order: 4;
     font-family: Playfair Display;
@@ -213,43 +248,10 @@ section {
   .biography-section__name::before {
     content: "-";
   }
-}
-.biography-section__profession-wrp {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 36px;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__profession-wrp {
     order: 1;
     margin-bottom: 60px;
   }
-}
-.biography-section__profession {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.09px;
-}
-
-.biography-section__roles-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.biography-section__role {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.09px;
-}
-
-.biography-section__role:not(:first-child)::before {
-  content: " / ";
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__role {
     display: block;
   }
@@ -259,28 +261,9 @@ section {
   .biography-section__role:first-child::before {
     content: " - ";
   }
-}
-.biography-section__card-separator {
-  width: 15px;
-  margin: 0;
-  border: 3px solid black;
-  margin-bottom: 18px;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__card-separator {
     display: none;
   }
-}
-.biography-section__quote {
-  font-family: "Bitter";
-  font-size: 26px;
-  line-height: 31.2px;
-  margin: 0;
-  max-width: 370px;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__quote {
     order: 2;
     font-family: Bitter;
@@ -294,21 +277,8 @@ section {
     margin-bottom: 50px;
     max-width: 417px;
   }
-}
-.biography-section__quote-break {
-  display: none;
-}
-
-@media screen and (max-width: 450px) {
   .biography-section__quote-break {
     display: initial;
-  }
-}
-@media screen and (max-width: 450px) {
-  .biography-section {
-    flex-direction: column;
-    margin: 80px auto;
-    position: relative;
   }
 }
 /* Designers section*/
