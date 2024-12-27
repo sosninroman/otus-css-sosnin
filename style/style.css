@@ -76,7 +76,6 @@ section {
   padding-top: 136px;
   box-sizing: border-box;
 }
-
 .hero-section__title-box {
   background-color: white;
   padding: 110px 65px;
@@ -84,28 +83,12 @@ section {
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-@media screen and (max-width: 450px) {
-  .hero-section__title-box {
-    padding: 107.5px 32px;
-  }
-}
 .hero-section__title {
   font-family: "Playfair Display";
   font-size: 86px;
   font-weight: 500;
   line-height: 103.2px;
   text-align: center;
-}
-
-@media screen and (max-width: 450px) {
-  .hero-section__title {
-    font-family: "Playfair Display";
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 93.2px;
-    text-align: center;
-  }
 }
 .hero-section__subtitle {
   font-size: 20px;
@@ -116,19 +99,27 @@ section {
 }
 
 @media screen and (max-width: 450px) {
+  .hero-section {
+    padding: 0;
+    background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
+    height: 763px;
+  }
+  .hero-section__title-box {
+    padding: 107.5px 32px;
+  }
+  .hero-section__title {
+    font-family: "Playfair Display";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 93.2px;
+    text-align: center;
+  }
   .hero-section__subtitle {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
     text-align: center;
     margin-top: 13.5px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .hero-section {
-    padding: 0;
-    background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
-    height: 763px;
   }
 }
 /* Biography section*/
