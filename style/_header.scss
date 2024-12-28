@@ -4,12 +4,22 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-}
 
-@import "./header__title";
+    &__title {
+        font-family: "Playfair Display";
+        font-size: 86px;
+        font-weight: 600;
+        line-height: 103.2px;
+        margin: 0;
+    }
+}
 
 @media screen and (max-width: 450px) {
     .header {
         display: none;
+
+        &__title {
+            display: none;
+        }
     }
 }
