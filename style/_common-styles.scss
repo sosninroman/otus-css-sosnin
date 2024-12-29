@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./mixins";
 
 @font-face {
     font-family: "Roboto";
@@ -24,10 +25,8 @@
 body {
     margin: 0;
     /* Default font settings*/
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
+    @include mixins.basic-text-style(16px, 400, 18.75px);
+    font-family: variables.$primary-font-family;
     text-align: left;
 }
 

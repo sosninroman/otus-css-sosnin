@@ -23,18 +23,14 @@
     }
 
     &__creator-info {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21.09px;
+        @include mixins.basic-text-style(18px, 500, 21.09px);
         text-align: center;
         width: calc(100% / 3 - 40px);
         align-self: center;
     }
     
     &__company-name {
-        font-size: 24px;
-        font-weight: 900;
-        line-height: 28.13px;
+        @include mixins.basic-text-style(24px, 900, 28.13px);
         text-align: center;
         margin-left: 5px;
     }

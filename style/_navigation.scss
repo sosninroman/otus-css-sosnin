@@ -13,9 +13,7 @@
     list-style-type: none;
 
     &__element {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 28.13px;
+        @include mixins.basic-text-style(24px, 500, 28.13px);
     }
     
     &__link {
@@ -51,10 +49,8 @@
             flex: 1;
 
             &::first-letter {
+                @include mixins.basic-text-style(40px, 400, 48px);
                 font-family: "Bitter";
-                font-size: 40px;
-                font-weight: 400;
-                line-height: 48px;
                 text-align: center;
             }
         }

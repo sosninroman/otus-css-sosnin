@@ -1,4 +1,5 @@
-@use "./testimonials-section";
+@use "./variables";
+@use "./mixins";
 
 .testimonials-section {
     display: grid;
@@ -53,9 +54,8 @@
     }
     
     &__testimonial-quote {
+        @include mixins.basic-text-style(32px, 400, 38.4px);
         font-family: "Bitter";
-        font-size: 32px;
-        line-height: 38.4px;
         text-align: center;
         margin: 0;
         margin-bottom: 40px;
@@ -72,12 +72,10 @@
         height: initial;
 
         &__title {
+            @include mixins.basic-text-style(18px, 700, 21.09px);
             transform: initial;
             order: 1;
-            font-family: Roboto;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 21.09px;
+            font-family: "Roboto";
             align-self: flex-end;
             margin-right: 2px;
         }

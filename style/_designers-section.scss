@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./mixins";
 
 .designers-section {
     max-width: 1677px;
@@ -50,10 +51,8 @@
 @media screen and (max-width: variables.$mobile-breakpoint) {
     .designers-section {
         &__title {
-            font-family: Roboto;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 21.09px;
+            @include mixins.basic-text-style(18px, 700, 21.09px);
+            font-family: "Roboto";
             margin-left: 16px;
             margin-bottom: 32px;
         }

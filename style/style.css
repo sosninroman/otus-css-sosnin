@@ -55,10 +55,10 @@ section {
   overflow: hidden;
 }
 .header__title {
-  font-family: "Playfair Display";
   font-size: 86px;
   font-weight: 600;
   line-height: 103.2px;
+  font-family: "Playfair Display";
   margin: 0;
 }
 
@@ -86,10 +86,10 @@ section {
   box-sizing: border-box;
 }
 .hero-section__title {
-  font-family: "Playfair Display";
   font-size: 86px;
   font-weight: 500;
   line-height: 103.2px;
+  font-family: "Playfair Display";
   text-align: center;
 }
 .hero-section__subtitle {
@@ -110,17 +110,14 @@ section {
     padding: 107.5px 32px;
   }
   .hero-section__title {
-    font-family: "Playfair Display";
     font-size: 70px;
     font-weight: 400;
     line-height: 93.2px;
-    text-align: center;
   }
   .hero-section__subtitle {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
-    text-align: center;
     margin-top: 13.5px;
   }
 }
@@ -150,10 +147,10 @@ section {
   padding-bottom: 174px;
 }
 .biography-section__name {
-  font-family: "Playfair Display";
   font-size: 86px;
   font-weight: 500;
   line-height: 114.64px;
+  font-family: "Playfair Display";
   word-spacing: 2rem;
   margin-bottom: 36px;
 }
@@ -173,10 +170,10 @@ section {
   list-style-type: none;
 }
 .biography-section__role {
-  display: inline-block;
   font-size: 18px;
   font-weight: 500;
   line-height: 21.09px;
+  display: inline-block;
 }
 .biography-section__role:not(:first-child)::before {
   content: " / ";
@@ -205,10 +202,10 @@ section {
     position: relative;
   }
   .biography-section__title {
-    transform: initial;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
+    transform: initial;
     order: 1;
     position: absolute;
     right: 6%;
@@ -230,11 +227,11 @@ section {
     flex-direction: column;
   }
   .biography-section__name {
-    order: 4;
-    font-family: "Playfair Display";
     font-size: 64px;
     font-weight: 400;
     line-height: 85.31px;
+    order: 4;
+    font-family: "Playfair Display";
     text-align: left;
     word-spacing: normal;
   }
@@ -258,11 +255,11 @@ section {
     display: none;
   }
   .biography-section__quote {
-    order: 2;
-    font-family: Bitter;
     font-size: 30px;
     font-weight: 300;
     line-height: 36px;
+    order: 2;
+    font-family: "Bitter";
     text-align: left;
     text-underline-position: from-font;
     -webkit-text-decoration-skip-ink: none;
@@ -314,10 +311,10 @@ section {
 
 @media screen and (max-width: 450px) {
   .designers-section__title {
-    font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
+    font-family: "Roboto";
     margin-left: 16px;
     margin-bottom: 32px;
   }
@@ -388,9 +385,10 @@ section {
   padding-top: 40px;
 }
 .testimonials-section__testimonial-quote {
-  font-family: "Bitter";
   font-size: 32px;
+  font-weight: 400;
   line-height: 38.4px;
+  font-family: "Bitter";
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
@@ -406,12 +404,12 @@ section {
     height: initial;
   }
   .testimonials-section__title {
-    transform: initial;
-    order: 1;
-    font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
+    transform: initial;
+    order: 1;
+    font-family: "Roboto";
     align-self: flex-end;
     margin-right: 2px;
   }
@@ -481,10 +479,10 @@ section {
   gap: 28px;
 }
 .strong-points-section__list-title {
-  font-family: "Playfair Display";
   font-size: 86px;
   font-weight: 500;
   line-height: 86px;
+  font-family: "Playfair Display";
 }
 .strong-points-section__list {
   padding: 0;
@@ -493,9 +491,10 @@ section {
   width: 216px;
 }
 .strong-points-section__item {
-  font-family: "Bitter";
   font-size: 34px;
+  font-weight: 400;
   line-height: 40.8px;
+  font-family: "Bitter";
   height: 1.241em;
 }
 .strong-points-section__img {
@@ -505,10 +504,10 @@ section {
 
 @media screen and (max-width: 450px) {
   .strong-points-section__title {
-    font-family: "Roboto";
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
+    font-family: "Roboto";
     margin-left: 16px;
   }
   .strong-points-section__wrp {
@@ -522,19 +521,19 @@ section {
     gap: 24px;
   }
   .strong-points-section__list-title {
-    font-family: "Playfair Display";
     font-size: 46px;
     font-weight: 400;
     line-height: 46px;
+    font-family: "Playfair Display";
   }
   .strong-points-section__list {
     width: 201px;
   }
   .strong-points-section__item {
-    font-family: "Bitter";
     font-size: 24px;
     font-weight: 400;
     line-height: 28.8px;
+    font-family: "Bitter";
     margin-bottom: 7.2px;
     padding-left: 15px;
   }

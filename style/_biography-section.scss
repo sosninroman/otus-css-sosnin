@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./mixins";
 
 .biography-section {
     display: flex;
@@ -27,10 +28,8 @@
     }
 
     &__name {
+        @include mixins.basic-text-style(86px, 500, 114.64px);
         font-family: "Playfair Display";
-        font-size: 86px;
-        font-weight: 500;
-        line-height: 114.64px;
         word-spacing: 2rem;
         margin-bottom: 36px;
     }
@@ -42,9 +41,7 @@
     }
 
     &__profession {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21.09px;
+        @include mixins.basic-text-style(18px, 500, 21.09px);
     }
 
     &__roles-list {
@@ -54,10 +51,8 @@
     }
 
     &__role {
+        @include mixins.basic-text-style(18px, 500, 21.09px);
         display: inline-block;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21.09px;
 
         &:not(:first-child)::before {
             content: " / ";
@@ -91,10 +86,8 @@
         position: relative;
 
         &__title {
+            @include mixins.basic-text-style(18px, 700, 21.09px);
             transform: initial;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 21.09px;
             order: 1;
             position: absolute;
             right: 6%;
@@ -119,11 +112,9 @@
         }
 
         &__name {
+            @include mixins.basic-text-style(64px, 400, 85.31px);
             order: 4;
             font-family: "Playfair Display";
-            font-size: 64px;
-            font-weight: 400;
-            line-height: 85.31px;
             text-align: left;
             word-spacing: normal;
 
@@ -154,11 +145,9 @@
         }
 
         &__quote {
+            @include mixins.basic-text-style(30px, 300, 36px);
             order: 2;
-            font-family: Bitter;
-            font-size: 30px;
-            font-weight: 300;
-            line-height: 36px;
+            font-family: "Bitter";
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
