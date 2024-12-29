@@ -1,0 +1,52 @@
+@use "./variables";
+@use "./mixins";
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    /* Default font settings*/
+    @include mixins.basic-text-style(16px, 400, 18.75px);
+    font-family: variables.$primary-font-family;
+    text-align: left;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+}
+
+@media screen and (max-width: variables.$mobile-breakpoint) {
+    section {
+        margin-bottom: 80px;
+    }
+}

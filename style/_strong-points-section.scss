@@ -1,0 +1,90 @@
+@use "./variables";
+@use "./mixins";
+
+.strong-points-section {
+    max-width: 1928px;
+    margin: 0 auto;
+
+    &__title {
+        margin-left: 258px;
+        margin-bottom: 30px;
+    }
+    
+    &__wrp {
+        display: grid;
+        grid-template-columns: repeat(2, 335px) 451px repeat(2, 335px);
+        grid-template-rows: 554px;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    &__list-wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+    
+    &__list-title {
+        @include mixins.basic-text-style(86px, 500, 86px);
+        font-family: "Playfair Display";
+    }
+    
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        width: 216px;
+    }
+    
+    &__item {
+        @include mixins.basic-text-style(34px, 400, 40.8px);
+        font-family: "Bitter";
+        height: 1.241em;
+    }
+    
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: variables.$mobile-breakpoint) {
+    .strong-points-section {
+        &__title {
+            @include mixins.basic-text-style(18px, 700, 21.09px);
+            font-family: "Roboto";
+            margin-left: 16px;
+        }
+        
+        &__wrp {
+            grid-template-columns: 201px repeat(4, 310px);
+            grid-template-rows: 450px;
+            padding: 0 16px;
+            gap: 18px;
+        }
+        
+        &__list-wrp {
+            grid-row: 1;
+            gap: 24px;
+        }
+        
+        &__list-title {
+            @include mixins.basic-text-style(46px, 400, 46px);
+            font-family: "Playfair Display";
+        }
+        
+        &__list {
+            width: 201px;
+        }
+        
+        &__item {
+            @include mixins.basic-text-style(24px, 400, 28.8px);
+            font-family: "Bitter";
+            margin-bottom: 7.2px;
+            padding-left: 15px;
+        }
+    }
+}

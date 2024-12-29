@@ -1,0 +1,127 @@
+@use "./variables";
+@use "./mixins";
+
+.testimonials-section {
+    display: grid;
+    grid-template-columns: repeat(12, 98px);
+    gap: 20px;
+    height: 760px;
+    max-width: 1400px;
+    margin: 150px auto;
+    overflow: auto;
+
+    &__title {
+        order: 3;
+        grid-column: 7 / span 1;
+        transform: rotateZ(270deg) translateX(-78%) translateY(-110%);
+        height: fit-content;
+    }
+    
+    &__cases-list {
+        order: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 98px;
+        transform: rotateZ(270deg) translateY(47%) translateX(208%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 130px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    &__case-list-item {
+        font-weight: 700;
+    }
+    
+    &__case-link {
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+    }
+    
+    &__cases-image {
+        order: 2;
+        grid-column: 3 / span 4;
+    }
+    
+    &__testimonial {
+        order: 3;
+        grid-column: 9 / span 2;
+        padding-top: 40px;
+    }
+    
+    &__testimonial-quote {
+        @include mixins.basic-text-style(32px, 400, 38.4px);
+        font-family: "Bitter";
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: variables.$mobile-breakpoint) {
+    .testimonials-section {
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto 76px auto;
+        padding-left: 18px;
+        padding-right: 18px;
+        height: initial;
+
+        &__title {
+            @include mixins.basic-text-style(18px, 700, 21.09px);
+            transform: initial;
+            order: 1;
+            font-family: "Roboto";
+            align-self: flex-end;
+            margin-right: 2px;
+        }
+        
+        &__cases-list {
+            transform: initial;
+            flex-wrap: wrap;
+            order: 3;
+            row-gap: 26px;
+            column-gap: 47px;
+            flex-direction: row;
+            padding-top: 6px;
+            padding-left: 3px;
+            width: initial;
+            margin-top: 2px;
+        }
+        
+        &__case-list-item {
+            max-width: 170px;
+        }
+        
+        &__cases-image {
+            display: none;
+        }
+        
+        &__testimonial {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            padding-top: 0;
+        }
+        
+        &__testimonial-quote {
+            margin: 5px auto 22px auto;
+            max-width: 342px;
+            font-family: Bitter;
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 36px;
+        }
+        
+        &__testimonial-img {
+            width: 100%;
+            height: 330px;
+            align-self: center;
+            object-fit: cover;
+        }
+    }
+}

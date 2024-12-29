@@ -1,750 +1,662 @@
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
-
 body {
-    margin: 0;
-    /* Default font settings*/
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-    text-align: left;
+  margin: 0;
+  /* Default font settings*/
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
 }
 
 h2,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 section {
-    margin-bottom: 150px;
-}
-
-@media screen and (max-width: 450px) {
-    section {
-        margin-bottom: 80px;
-    }
-}
-
-/* Header */
-.header {
-    padding: 16px 20px 16px 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-
-.header-title {
-    font-family: "Playfair Display";
-    font-size: 86px;
-    font-weight: 600;
-    line-height: 103.2px;
-    margin: 0;
-}
-
-@media screen and (max-width: 450px) {
-    .header {
-        display: none;
-    }
-}
-
-/* Hero section */
-.hero-section {
-    background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 1.jpg");
-    background-size: 100% 100%;
-    height: 630px;
-    padding-top: 136px;
-    box-sizing: border-box;
-}
-
-.hero-title-box {
-    background-color: white;
-    padding: 110px 65px;
-    max-width: 690px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.hero-title {
-    font-family: "Playfair Display";
-    font-size: 86px;
-    font-weight: 500;
-    line-height: 103.2px;
-    text-align: center;
-}
-
-.hero-subtitle {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.44px;
-    text-align: center;
-    margin-top: 14px;
+  margin-bottom: 150px;
 }
 
 .section-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.13px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
 }
 
 @media screen and (max-width: 450px) {
-    .hero-section {
-        padding: 0;
-        background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
-        height: 763px;
-    }
-
-    .hero-title-box {
-        padding: 107.5px 32px;
-    }
-
-    .hero-title {
-        font-family: "Playfair Display";
-        font-size: 70px;
-        font-weight: 400;
-        line-height: 93.2px;
-        text-align: center;
-    }
-
-    .hero-subtitle {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21.09px;
-        text-align: center;
-        margin-top: 13.5px;
-    }
+  section {
+    margin-bottom: 80px;
+  }
+}
+/* Header */
+.header {
+  padding: 16px 20px 16px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.header__title {
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 103.2px;
+  font-family: "Playfair Display";
+  margin: 0;
 }
 
-/* Biography section*/
-#biography-section {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    max-width: 1165px;
-    margin: 152px auto 148px auto;
-    overflow: auto;
-}
-
-.biography-title {
-    order: 1;
-    transform: rotateZ(270deg) translateX(-38%) translateY(-90%);
-    height: fit-content;
-}
-
-.biography-image {
-    order: 0;
-}
-
-.biography-card {
-    order: 2;
-    max-width: 455px;
-    max-height: 850px;
-    padding-top: 174px;
-    padding-bottom: 174px;
-}
-
-.biography-name {
-    font-family: "Playfair Display";
-    font-size: 86px;
-    font-weight: 500;
-    line-height: 114.64px;
-    word-spacing: 2rem;
-    margin-bottom: 36px;
-}
-
-.biography-profession-wrp {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 36px;
- }
-
-.biography-profession {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21.09px;
-}
-
-.biography-roles-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.biography-role {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21.09px;
-}
-
-.biography-role:not(:first-child)::before {
-    content: " / ";
-}
-
-.biography-card-separator {
-    width: 15px;
-    margin: 0;
-    border: 3px solid black;
-    margin-bottom: 18px;
-}
-
-.biography-quote {
-    font-family: "Bitter";
-    font-size: 26px;
-    line-height: 31.2px;
-    margin: 0;
-    max-width: 370px;
-}
-
-.quote-break {
+@media screen and (max-width: 450px) {
+  .header {
     display: none;
+  }
+  .header__title {
+    display: none;
+  }
+}
+/* Hero section */
+.hero-section {
+  background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 1.jpg");
+  background-size: 100% 100%;
+  height: 630px;
+  padding-top: 136px;
+  box-sizing: border-box;
+}
+.hero-section__title-box {
+  background-color: white;
+  padding: 110px 65px;
+  max-width: 690px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.hero-section__title {
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 103.2px;
+  font-family: "Playfair Display";
+  text-align: center;
+}
+.hero-section__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+  margin-top: 14px;
 }
 
 @media screen and (max-width: 450px) {
-    #biography-section {
-        flex-direction: column;
-        margin: 80px auto;
-        position: relative;
-    }
-
-    .biography-title {
-        transform: initial;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.09px;
-        order: 1;
-        position: absolute;
-        right: 6%;
-        top: 2px;
-    }
-
-    .biography-image {
-        order: 3;
-    }
-
-    .biography-card {
-        order: 2;
-        padding-left: 18px;
-        padding-right: 9px;
-        padding-top: 0;
-        padding-bottom: 0;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .biography-role:not(:first-child)::before {
-        content: " - ";
-    }
-    .biography-role:first-child::before {
-        content: " - ";
-    }
-
-    .biography-profession-wrp {
-        order: 1;
-        margin-bottom: 60px;
-    }
-
-    .biography-quote {
-        order: 2;
-        font-family: Bitter;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 36px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-
-        margin-bottom: 50px;
-        max-width: 417px;
-    }
-
-    .biography-card-separator {
-        display: none;
-    }
-
-    .biography-name {
-        order:4;
-        font-family: Playfair Display;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 85.31px;
-        text-align: left;
-        word-spacing: normal;
-    }
-
-    .biography-name::before {
-        content: "-";
-    }
-
-    .biography-role {
-        display: block;
-    }
-
-    .biography-image {
-        height: 400px;
-        object-fit: cover;
-    }
-
-    .quote-break {
-        display: initial;
-    }
-}
-
-/* Designers section*/
-#designers-section {
-    max-width: 1677px;
-    margin: 0 auto;
-}
-
-.designers-title {
-    margin-left: 139px;
-    margin-bottom: 30px;
-}
-
-.designers-list {
-    display: flex;
-    gap: 20px;
-    overflow: auto;
-    padding: 0 20px;
-}
-
-.designer-info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    flex-shrink: 0;
-}
-
-.designer-info.active > .designer-info-text {
-    margin-left: 239px;
-}
-
-.designer-info.active > picture {
-    max-height: 538px;
-}
-
-.designer-info:not(.active) {
-    padding-top: 99px;
-}
-
-.designer-info-text {
-    font-weight: 700;
-}
-
-.designer-info-from,
-.designer-info-skills {
-    font-weight: 400;
-}
-
-@media screen and (max-width: 450px) {
-    .designers-title {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.09px;
-        margin-left: 16px;
-        margin-bottom: 32px;
-    }
-
-    .designers-list {
-        padding: 0 16px;
-        gap: 16px;
-    }
-
-    .designer-info.active img {
-        max-width: 310px;
-        height: 437.8px;
-    }
-
-    .designer-info.active>.designer-info-text {
-        margin-left: 0;
-    }
-
-    .designer-info:not(.active) {
-        padding-top: 0;
-    }
-}
-
-/* Testimonials section  */
-#testimonials-section {
-    display: grid;
-    grid-template-columns: repeat(12, 98px);
-    gap: 20px;
-    height: 760px;
-    max-width: 1400px;
-    margin: 150px auto;
-    overflow: auto;
-}
-
-.testimonials-title {
-    order: 3;
-    grid-column: 7 / span 1;
-    transform: rotateZ(270deg) translateX(-78%) translateY(-110%);
-    height: fit-content;
-}
-
-.cases-list {
-    order: 1;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 98px;
-    transform: rotateZ(270deg) translateY(47%) translateX(208%);
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 130px;
-    list-style: none;
+  .hero-section {
     padding: 0;
-    margin: 0;
-}
-
-.case-list-item {
-    font-weight: 700;
-}
-
-.case-link {
+    background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
+    height: 763px;
+  }
+  .hero-section__title-box {
+    padding: 107.5px 32px;
+  }
+  .hero-section__title {
+    font-size: 70px;
     font-weight: 400;
-    text-decoration: none;
-    color: black;
-}
-
-.cases-image {
-    order: 2;
-    grid-column: 3 / span 4;
-}
-
-.testimonial {
-    order: 3;
-    grid-column: 9 / span 2;
-    padding-top: 40px;
-}
-
-.testimonial-quote {
-    font-family: "Bitter";
-    font-size: 32px;
-    line-height: 38.4px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-@media screen and (max-width: 450px) {
-    #testimonials-section {
-        display: flex;
-        flex-direction: column;
-        margin: 80px auto 76px auto;
-        padding-left: 18px;
-        padding-right: 18px;
-        height: initial;
-    }
-
-    .testimonials-title {
-        transform: initial;
-        order: 1;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.09px;
-        align-self: flex-end;
-        margin-right: 2px;
-    }
-
-    .cases-list {
-        transform: initial;
-        flex-wrap: wrap;
-        order: 3;
-        row-gap: 26px;
-        column-gap: 47px;
-        flex-direction: row;
-        padding-top: 6px;
-        padding-left: 3px;
-        width: initial;
-        margin-top: 2px;
-    }
-
-    .case-list-item {
-        max-width: 170px;
-    }
-
-    .cases-image {
-        display: none;
-    }
-
-    .testimonial {
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-    }
-
-    .testimonial-quote {
-        margin: 5px auto 22px auto;
-        max-width: 342px;
-        font-family: Bitter;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 36px;
-    }
-
-    .testimonial-img {
-        width: 100%;
-        height: 330px;
-        align-self: center;
-        object-fit: cover;
-    }
-}
-
-/* Strong points section */
-#strong-points-section {
-    max-width: 1928px;
-    margin: 0 auto;
-}
-
-.strong-points-section-title {
-    margin-left: 258px;
-    margin-bottom: 30px;
-}
-
-.strong-points-wrp {
-    display: grid;
-    grid-template-columns: repeat(2, 335px) 451px repeat(2, 335px);
-    grid-template-rows: 554px;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.strong-points-list-wrp {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    gap: 28px;
-}
-
-.strong-points-list-title {
-    font-family: "Playfair Display";
-    font-size: 86px;
+    line-height: 93.2px;
+  }
+  .hero-section__subtitle {
+    font-size: 18px;
     font-weight: 500;
-    line-height: 86px;
+    line-height: 21.09px;
+    margin-top: 13.5px;
+  }
 }
-
-.strong-points-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    width: 216px;
+/* Biography section*/
+.biography-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 1165px;
+  margin: 152px auto 148px auto;
+  overflow: auto;
 }
-
-.strong-points-list-item {
-    font-family: "Bitter";
-    font-size: 34px;
-    line-height: 40.8px;
-    height: 1.241em;
+.biography-section__image {
+  order: 0;
 }
-
-.strong-points-img {
-    height: 100%;
-    width: 100%;
+.biography-section__title {
+  order: 1;
+  transform: rotateZ(270deg) translateX(-38%) translateY(-90%);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.biography-section__card {
+  order: 2;
+  max-width: 455px;
+  max-height: 850px;
+  padding-top: 174px;
+  padding-bottom: 174px;
+}
+.biography-section__name {
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 114.64px;
+  font-family: "Playfair Display";
+  word-spacing: 2rem;
+  margin-bottom: 36px;
+}
+.biography-section__profession-wrp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+.biography-section__profession {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+.biography-section__roles-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.biography-section__role {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  display: inline-block;
+}
+.biography-section__role:not(:first-child)::before {
+  content: " / ";
+}
+.biography-section__card-separator {
+  width: 15px;
+  margin: 0;
+  border: 3px solid black;
+  margin-bottom: 18px;
+}
+.biography-section__quote {
+  font-family: "Bitter";
+  font-size: 26px;
+  line-height: 31.2px;
+  margin: 0;
+  max-width: 370px;
+}
+.biography-section__quote-break {
+  display: none;
 }
 
 @media screen and (max-width: 450px) {
-    .strong-points-section-title {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.09px;
-        margin-left: 16px;
-    }
-
-    .strong-points-wrp {
-        grid-template-columns: 201px repeat(4, 310px);
-        grid-template-rows: 450px;
-        padding: 0 16px;
-        gap: 18px;
-    }
-
-    .strong-points-list-wrp {
-        grid-row: 1;
-        gap: 24px;
-    }
-
-    .strong-points-list-title {
-        font-family: Playfair Display;
-        font-size: 46px;
-        font-weight: 400;
-        line-height: 46px;
-    }
-
-    .strong-points-list {
-        width: 201px;
-    }
-
-    .strong-points-list-item {
-        font-family: "Bitter";
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28.8px;
-        margin-bottom: 7.2px;
-        padding-left: 15px;
-    }
+  .biography-section {
+    flex-direction: column;
+    margin: 80px auto;
+    position: relative;
+  }
+  .biography-section__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    transform: initial;
+    order: 1;
+    position: absolute;
+    right: 6%;
+    top: 2px;
+  }
+  .biography-section__image {
+    order: 3;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .biography-section__card {
+    order: 2;
+    padding-left: 18px;
+    padding-right: 9px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .biography-section__name {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 85.31px;
+    order: 4;
+    font-family: "Playfair Display";
+    text-align: left;
+    word-spacing: normal;
+  }
+  .biography-section__name::before {
+    content: "-";
+  }
+  .biography-section__profession-wrp {
+    order: 1;
+    margin-bottom: 60px;
+  }
+  .biography-section__role {
+    display: block;
+  }
+  .biography-section__role:not(:first-child)::before {
+    content: " - ";
+  }
+  .biography-section__role:first-child::before {
+    content: " - ";
+  }
+  .biography-section__card-separator {
+    display: none;
+  }
+  .biography-section__quote {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    order: 2;
+    font-family: "Bitter";
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin-bottom: 50px;
+    max-width: 417px;
+  }
+  .biography-section__quote-break {
+    display: initial;
+  }
+}
+/* Designers section*/
+.designers-section {
+  max-width: 1677px;
+  margin: 0 auto;
+}
+.designers-section__title {
+  margin-left: 139px;
+  margin-bottom: 30px;
+}
+.designers-section__list {
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.designers-section__designer-card, .designers-section__designer-card_active {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-shrink: 0;
+  padding-top: 99px;
+}
+.designers-section__designer-card_active {
+  padding-top: initial;
+}
+.designers-section__designer-card_active > .designers-section__text {
+  margin-left: 239px;
+}
+.designers-section__designer-card_active > picture {
+  max-height: 538px;
+}
+.designers-section__text {
+  font-weight: 700;
+}
+.designers-section__from, .designers-section__skills {
+  font-weight: 400;
 }
 
+@media screen and (max-width: 450px) {
+  .designers-section__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    font-family: "Roboto";
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+  .designers-section__list {
+    padding: 0 16px;
+    gap: 16px;
+  }
+  .designers-section__designer-card, .designers-section__designer-card_active {
+    padding-top: 0;
+  }
+  .designers-section__designer-card_active {
+    padding-top: initial;
+  }
+  .designers-section__designer-card_active img {
+    max-width: 310px;
+    height: 437.8px;
+  }
+  .designers-section__designer-card_active > .designers-section__text {
+    margin-left: 0;
+  }
+}
+/* Testimonials section  */
+.testimonials-section {
+  display: grid;
+  grid-template-columns: repeat(12, 98px);
+  gap: 20px;
+  height: 760px;
+  max-width: 1400px;
+  margin: 150px auto;
+  overflow: auto;
+}
+.testimonials-section__title {
+  order: 3;
+  grid-column: 7/span 1;
+  transform: rotateZ(270deg) translateX(-78%) translateY(-110%);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.testimonials-section__cases-list {
+  order: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 98px;
+  transform: rotateZ(270deg) translateY(47%) translateX(208%);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 130px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.testimonials-section__case-list-item {
+  font-weight: 700;
+}
+.testimonials-section__case-link {
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+.testimonials-section__cases-image {
+  order: 2;
+  grid-column: 3/span 4;
+}
+.testimonials-section__testimonial {
+  order: 3;
+  grid-column: 9/span 2;
+  padding-top: 40px;
+}
+.testimonials-section__testimonial-quote {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  font-family: "Bitter";
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  .testimonials-section {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 76px auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: initial;
+  }
+  .testimonials-section__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    transform: initial;
+    order: 1;
+    font-family: "Roboto";
+    align-self: flex-end;
+    margin-right: 2px;
+  }
+  .testimonials-section__cases-list {
+    transform: initial;
+    flex-wrap: wrap;
+    order: 3;
+    row-gap: 26px;
+    -moz-column-gap: 47px;
+         column-gap: 47px;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-left: 3px;
+    width: initial;
+    margin-top: 2px;
+  }
+  .testimonials-section__case-list-item {
+    max-width: 170px;
+  }
+  .testimonials-section__cases-image {
+    display: none;
+  }
+  .testimonials-section__testimonial {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .testimonials-section__testimonial-quote {
+    margin: 5px auto 22px auto;
+    max-width: 342px;
+    font-family: Bitter;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+  .testimonials-section__testimonial-img {
+    width: 100%;
+    height: 330px;
+    align-self: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/* Strong points section */
+.strong-points-section {
+  max-width: 1928px;
+  margin: 0 auto;
+}
+.strong-points-section__title {
+  margin-left: 258px;
+  margin-bottom: 30px;
+}
+.strong-points-section__wrp {
+  display: grid;
+  grid-template-columns: repeat(2, 335px) 451px repeat(2, 335px);
+  grid-template-rows: 554px;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.strong-points-section__list-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.strong-points-section__list-title {
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 86px;
+  font-family: "Playfair Display";
+}
+.strong-points-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 216px;
+}
+.strong-points-section__item {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.8px;
+  font-family: "Bitter";
+  height: 1.241em;
+}
+.strong-points-section__img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .strong-points-section__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    font-family: "Roboto";
+    margin-left: 16px;
+  }
+  .strong-points-section__wrp {
+    grid-template-columns: 201px repeat(4, 310px);
+    grid-template-rows: 450px;
+    padding: 0 16px;
+    gap: 18px;
+  }
+  .strong-points-section__list-wrp {
+    grid-row: 1;
+    gap: 24px;
+  }
+  .strong-points-section__list-title {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+    font-family: "Playfair Display";
+  }
+  .strong-points-section__list {
+    width: 201px;
+  }
+  .strong-points-section__item {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    font-family: "Bitter";
+    margin-bottom: 7.2px;
+    padding-left: 15px;
+  }
+}
 /* Navigation */
 .navigation {
-    margin-top: 0px;
-    position: absolute;
-    top: 37px;
-    right: 22px;
+  margin-top: 0px;
+  position: absolute;
+  top: 37px;
+  right: 22px;
 }
 
 .navigation-menu {
-    display: flex;
-    gap: 55px;
-    list-style-type: none;
+  display: flex;
+  gap: 55px;
+  list-style-type: none;
 }
-
-.navigation-menu-element {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.13px;
+.navigation-menu__element {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
 }
-
-.navigation-link {
-    color: black;
-    text-decoration: none;
+.navigation-menu__link {
+  color: black;
+  text-decoration: none;
 }
-
-.navigation-link:hover {
-    text-decoration: underline;
+.navigation-menu__link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 450px) {
-    .navigation {
-        margin-top: 80px;
-        position: sticky;
-        bottom: 0px;
-        background-color: white;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-
-    .header-title {
-        display: none;
-    }
-
-    .navigation-menu {
-        margin-top: 17px;
-        margin-bottom: 13px;
-        gap: 16px;
-        padding: 0 17px;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    .navigation-menu-element {
-        font-size: 0;
-        flex: 1;
-    }
-
-    .navigation-menu-element::first-letter {
-        font-family: Bitter;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 48px;
-        text-align: center;
-    }
+  .navigation {
+    margin-top: 80px;
+    position: sticky;
+    bottom: 0px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .navigation-menu {
+    margin-top: 17px;
+    margin-bottom: 13px;
+    gap: 16px;
+    padding: 0 17px;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .navigation-menu__element {
+    font-size: 0;
+    flex: 1;
+  }
+  .navigation-menu__element::first-letter {
+    font-family: "Bitter";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+  }
 }
-
 /* Footer */
-footer {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 60px 20px 70px 20px;
-    margin-top: 150px;
-    gap: 20px;
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 20px 70px 20px;
+  margin-top: 150px;
+  gap: 20px;
 }
-
-.contact-info {
-    line-height: 26px;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 3 - 40px)
+.footer__contact-info {
+  line-height: 26px;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.3333333333% - 40px);
 }
-
-.contact-info > a {
-    color: white;
+.footer__contact-info > a {
+  color: white;
 }
-
-.creator-info {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21.09px;
-    text-align: center;
-    width: calc(100% / 3 - 40px);
-    align-self: center;
+.footer__creator-info {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: center;
+  width: calc(33.3333333333% - 40px);
+  align-self: center;
 }
-
-.footer-company-name {
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 28.13px;
-    text-align: center;
-    margin-left: 5px;
+.footer__company-name {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28.13px;
+  text-align: center;
+  margin-left: 5px;
 }
-
-.copyright {
-    text-align: right;
-    width: calc(100% / 3 - 40px);
-    margin-right: 4px;
-    margin-bottom: 1px;
-    align-self: center;
+.footer__copyright {
+  text-align: right;
+  width: calc(33.3333333333% - 40px);
+  margin-right: 4px;
+  margin-bottom: 1px;
+  align-self: center;
 }
 
 @media screen and (max-width: 450px) {
-    footer {
-        margin-top: 80px;
-        padding: 43px 16px 70px 16px;
-        flex-direction: column;
-        gap: 3px;
-    }
-    .contact-info {
-        order: 2;
-        width: initial;
-    }
-    .creator-info {
-        order: 1;
-        width: initial;
-        align-self: flex-end;
-    }
-    .copyright {
-        order: 3;
-        width: initial;
-        align-self: flex-start;
-        margin-top: 2px;
-    }
-}
+  .footer {
+    margin-top: 80px;
+    padding: 43px 16px 70px 16px;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .footer__contact-info {
+    order: 2;
+    width: initial;
+  }
+  .footer__creator-info {
+    order: 1;
+    width: initial;
+    align-self: flex-end;
+  }
+  .footer__copyright {
+    order: 3;
+    width: initial;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+}/*# sourceMappingURL=style.css.map */

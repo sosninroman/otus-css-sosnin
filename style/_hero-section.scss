@@ -1,0 +1,51 @@
+@use "./variables";
+@use "./mixins";
+
+.hero-section {
+    background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 1.jpg");
+    background-size: 100% 100%;
+    height: 630px;
+    padding-top: 136px;
+    box-sizing: border-box;
+
+    &__title-box {
+        background-color: white;
+        padding: 110px 65px;
+        max-width: 690px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        @include mixins.basic-text-style(86px, 500, 103.2px);
+        font-family: "Playfair Display";
+        text-align: center;
+    }
+
+    &__subtitle {
+        @include mixins.basic-text-style(20px, 500, 23.44px);
+        text-align: center;
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width: variables.$mobile-breakpoint) {
+    .hero-section {
+        padding: 0;
+        background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");
+        height: 763px;
+
+        &__title-box {
+            padding: 107.5px 32px;
+        }
+
+        &__title {
+            @include mixins.basic-text-style(70px, 400, 93.2px);
+        }
+
+        &__subtitle {
+            @include mixins.basic-text-style(18px, 500, 21.09px);
+            margin-top: 13.5px;
+        }
+    }
+}

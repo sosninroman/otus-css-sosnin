@@ -1,0 +1,26 @@
+@use "./variables";
+@use "./mixins";
+
+.header {
+    padding: 16px 20px 16px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    &__title {
+        @include mixins.basic-text-style(86px, 600, 103.2px);
+        font-family: "Playfair Display";
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: variables.$mobile-breakpoint) {
+    .header {
+        display: none;
+
+        &__title {
+            display: none;
+        }
+    }
+}
