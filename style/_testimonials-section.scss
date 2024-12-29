@@ -1,3 +1,5 @@
+@use "./testimonials-section";
+
 .testimonials-section {
     display: grid;
     grid-template-columns: repeat(12, 98px);
@@ -60,7 +62,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     .testimonials-section {
         display: flex;
         flex-direction: column;

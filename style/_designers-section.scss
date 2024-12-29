@@ -1,3 +1,5 @@
+@use "./variables";
+
 .designers-section {
     max-width: 1677px;
     margin: 0 auto;
@@ -45,7 +47,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     .designers-section {
         &__title {
             font-family: Roboto;

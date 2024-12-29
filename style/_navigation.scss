@@ -1,3 +1,5 @@
+@use "./variables";
+
 .navigation {
     margin-top: 0px;
     position: absolute;
@@ -26,7 +28,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     .navigation {
         margin-top: 80px;
         position: sticky;
@@ -49,7 +51,7 @@
             flex: 1;
 
             &::first-letter {
-                font-family: Bitter;
+                font-family: "Bitter";
                 font-size: 40px;
                 font-weight: 400;
                 line-height: 48px;

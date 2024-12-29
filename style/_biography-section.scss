@@ -1,3 +1,5 @@
+@use "./variables";
+
 .biography-section {
     display: flex;
     justify-content: center;
@@ -82,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     .biography-section {
         flex-direction: column;
         margin: 80px auto;
@@ -118,7 +120,7 @@
 
         &__name {
             order: 4;
-            font-family: Playfair Display;
+            font-family: "Playfair Display";
             font-size: 64px;
             font-weight: 400;
             line-height: 85.31px;

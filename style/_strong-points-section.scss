@@ -1,3 +1,5 @@
+@use "./variables";
+
 .strong-points-section {
     max-width: 1928px;
     margin: 0 auto;
@@ -51,10 +53,10 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     .strong-points-section {
         &__title {
-            font-family: Roboto;
+            font-family: "Roboto";
             font-size: 18px;
             font-weight: 700;
             line-height: 21.09px;
@@ -74,7 +76,7 @@
         }
         
         &__list-title {
-            font-family: Playfair Display;
+            font-family: "Playfair Display";
             font-size: 46px;
             font-weight: 400;
             line-height: 46px;

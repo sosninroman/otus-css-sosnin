@@ -1,3 +1,5 @@
+@use "./variables";
+
 .hero-section {
     background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 1.jpg");
     background-size: 100% 100%;
@@ -30,7 +32,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     .hero-section {
         padding: 0;
         background-image: url("../images/inside-weather-Uxqlfigh6oE-unsplash 2.png");

@@ -1,3 +1,5 @@
+@use "./variables";
+
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.woff") format("woff");
@@ -44,7 +46,7 @@ section {
     line-height: 28.13px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: variables.$mobile-breakpoint) {
     section {
         margin-bottom: 80px;
     }

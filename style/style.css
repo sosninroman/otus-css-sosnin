@@ -231,7 +231,7 @@ section {
   }
   .biography-section__name {
     order: 4;
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-size: 64px;
     font-weight: 400;
     line-height: 85.31px;
@@ -505,7 +505,7 @@ section {
 
 @media screen and (max-width: 450px) {
   .strong-points-section__title {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
@@ -522,7 +522,7 @@ section {
     gap: 24px;
   }
   .strong-points-section__list-title {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-size: 46px;
     font-weight: 400;
     line-height: 46px;
@@ -587,7 +587,7 @@ section {
     flex: 1;
   }
   .navigation-menu__element::first-letter {
-    font-family: Bitter;
+    font-family: "Bitter";
     font-size: 40px;
     font-weight: 400;
     line-height: 48px;
